@@ -128,7 +128,8 @@ print("\nSaving files...")
 
 OUTPUT_DIR = BASE_DIR / "output"
 
-df.to_csv(OUTPUT_DIR / "cleaned_sales.csv", index=False)
+#df.to_csv(OUTPUT_DIR / "cleaned_sales.csv", index=False)
+df.head(100).to_csv(OUTPUT_DIR / "cleaned_sales_sample.csv", index=False)
 age_summary.to_csv(OUTPUT_DIR /"age_summary.csv")
 product_sales.to_csv(OUTPUT_DIR /"product_sales.csv")
 product_net_revenue.to_csv(OUTPUT_DIR /"product_net_revenue.csv")
